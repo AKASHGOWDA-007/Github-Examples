@@ -12,4 +12,4 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v3
       - name: Run a one-line script
-        uses: echo "Hello from a self-hosted runner"
+        run: echo "Hello from a self-hosted runner"
