@@ -1,0 +1,14 @@
+name: conditional-example-workflow
+on: [push]
+jobs:
+  hello_world:
+    if: github.repository == "AKASHGOWDA-007/Github-Examples"
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: "Hello world!"
+        run: echo "Hello world!"
+  goodbye_noon:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: "Goodbye noon"
+        run: echo "Goodbye Noon!"
